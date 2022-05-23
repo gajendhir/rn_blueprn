@@ -142,5 +142,4 @@ BluetoothEscposPrinter.ALIGN={
     RIGHT:2
 };
 
- module.exports ={
-    BluetoothManager,BluetoothEscposPrinter, BluetoothTscPrinter };
+ module.exports ={ BluetoothManager,BluetoothEscposPrinter, BluetoothTscPrinter };
