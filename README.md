@@ -1,4 +1,7 @@
-# react-native-bluetooch-escpos-printer
+# react-native-bluetooch-printer
+
+## updating react-native-bluetooch-escpos-printer
+to make it comptible with gradle 7.2
 
 React-Native plugin for the bluetooth ESC/POS & TSC printers.
 
