@@ -1,4 +1,7 @@
-# react-native-bluetooch-escpos-printer
+# react-native-bluetooth-printer
+
+## updating react-native-bluetooch-escpos-printer
+to make it comptible with gradle 7.2
 
 React-Native plugin for the bluetooth ESC/POS & TSC printers.
 
@@ -12,14 +15,10 @@ Any questions or bug please raise a issue.
 
 ## Installation
 ### Step 1 ###
-Install via NPM [Check In NPM](https://www.npmjs.com/package/react-native-bluetooth-escpos-printer)
-```bash
-npm install react-native-bluetooth-escpos-printer --save
-```
 
-Or install via github
+Install via github
 ```bash
-npm install https://github.com/januslo/react-native-bluetooth-escpos-printer.git --save
+npm install https://github.com/januslo/gajendhir/react-native-bluetooth-printer.git --save
 ```
 
 ### Step2 ###
@@ -157,13 +156,26 @@ async function, connects the specified device, if not bound, bound dailog prompt
        alert(e);
     })
 
+
+```
+* disconnect ==>
+async function, disconnects the specified devices 
+
+```javascript
+     BluetoothManager.disconnect(rowData.address)
+     .then((s)=>{
+        //success here
+     },
+     (err)=>{
+        //error here
+     })
 ```
 
 * unpair ==>
 async function, disconnects and unpairs the specified devices
 
 ```javascript
-     BluetoothManager.connect(rowData.address)
+     BluetoothManager.unpaire(rowData.address)
      .then((s)=>{
         //success here
      },
